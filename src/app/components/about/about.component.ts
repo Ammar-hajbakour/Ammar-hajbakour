@@ -7,11 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
   texts = [
-    'Having Strong Knowledge Of Web Development Technologies .',
-    'Modern And Responsive Web Designs Using Javascript Vanilla And Css To Build Landing Pages From Scratch .',
-    'Creating Wordpress Websites...',
-    'Building a Single Page Applications Using Angular And React .',
-    'Dealing with Server Side And Databases Using Nestjs And TypeORM Freamworks .',
+    'I am a qualified and professional front end developer with three years of experience in HTML,CSS and JAVASCRIPT\'s frameworks',
+    'I have Strong knowledge in data structure, algorithms, problem solving and Web Development Technologies .',
+    'I make Modern And Responsive Web Designs and Wordpress Websites...',
+    'Single Page Applications Using Angular And React .',
+    'I can also handle databases.',
   ]
   constructor() {
 

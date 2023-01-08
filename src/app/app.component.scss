@@ -1,21 +1,10 @@
 :host {
   width: 100%;
-  height: 100vh;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+  height: 100%;
 
-  .container {
-    padding: 1rem;
-    background: var(--bg-image);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: var(--secondry-coloe);
-
-    @media(max-width: 576px) {
-      background: var(--main-color);
-      padding: 0;
-    }
-
+  .container{
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
   }
 }

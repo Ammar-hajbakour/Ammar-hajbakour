@@ -1,11 +1,11 @@
 :host {
   footer {
-    padding: 10px;
     color: var(--secondry-coloe);
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    padding-block: 1rem;
+    margin-block-start: 1rem;
     p {
       font-size: 14px;
       display: flex;

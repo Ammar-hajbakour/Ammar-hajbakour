@@ -1,46 +1,33 @@
 :host {
-
-
-  .p-skills {
-    height: 100%;
+  margin-block: auto;
+  height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 460px;
+    grid-template-rows: 100%;
     grid-gap: 1rem;
 
-    place-content: center;
-    margin: auto;
 
     @media(max-width: 912px) {
       grid-template-columns: 1fr;
-      grid-template-rows: 460px 460px;
+      grid-template-rows: 1fr 1fr;
 
     }
-  }
+
 
   .skills-container,
-  .prod-and-hobbies {
+  .prod-and-langs {
     height: 100%;
     background: rgba(0, 0, 0, 0.3);
-    padding: 0 20px;
+    color: var(--secondry-coloe);
+    padding: 1rem;
     border: 1px solid cyan;
     border-radius: 2px;
   }
 
-
-  .p-skills .title {
-    margin: 10px 0;
-  }
-
   .progress {
-    width: 80%;
-    margin: auto;
-    margin-bottom: 10px;
+    width: 100%;
   }
 
-  .progress h4 {
-    margin-top: 10px;
-  }
 
   .progress p {
     border: 1px solid var(--secondry-coloe);
@@ -48,6 +35,7 @@
     width: 100%;
     height: 10px;
     position: relative;
+    margin-block-start: .2rem;
   }
 
   .progress p span {
@@ -56,37 +44,38 @@
     box-shadow: 0 0 10px cyan, 0 0 20px cyan;
     position: absolute;
     display: inline-block;
-    height: 10px;
+    height: 8px;
     transition: 0.5s linear;
   }
 
 
-  .skills-container {
+  .skills-container .skills {
+    width: 100%;
+    height: 100%;
     display: grid;
-    grid-template-rows: 50px auto 50px auto;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    gap: .3rem;
+    margin: auto;
   }
 
-  .prod-and-hobbies {
+  .prod-and-langs {
     display: grid;
-    grid-template-rows: 40px auto auto auto;
+    grid-template-rows: 1fr auto;
   }
 
   .most-prod {
     width: 100%;
-    max-width: 350px;
-    height: 100px;
+    // max-width: 350px;
     display: flex;
     flex-flow: column;
     align-items: center;
-    margin: 0 auto;
 
   }
 
   .most-prod .item {
     width: 100%;
     height: 100%;
-    text-align: center;
-    padding: 20px;
+    // text-align: center;
     transition: .5s ease-in;
 
   }
@@ -107,5 +96,13 @@
     color: cyan;
     text-shadow: 0 0 10px darkcyan;
 
+  }
+  .lang{
+    .title{
+      margin-block-end: 1rem;
+    }
+    .progress{
+      margin-block-end: 1rem;
+    }
   }
 }

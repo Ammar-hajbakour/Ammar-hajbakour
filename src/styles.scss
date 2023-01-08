@@ -5,12 +5,13 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body,
 html {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   overflow-x: hidden;
   font-family: 'Zen Kurenaido', sans-serif;
   --main-color: #061019;
@@ -20,8 +21,12 @@ html {
   user-select: none;
   scroll-behavior: smooth;
 }
-
-body {}
+.container{
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
 
 ::-webkit-scrollbar {
   width: 10px;

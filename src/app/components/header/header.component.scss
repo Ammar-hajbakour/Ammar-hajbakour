@@ -1,38 +1,28 @@
 :host {
-
-
-
+  margin-block-end: 1rem;
   header {
     position: relative;
-    height: min-content;
+    width: 100%;
     display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    // overflow-x: hidden;
-    // border-bottom: 1px solid cyan;
-
+    grid-template-columns: auto 1fr auto;
     @media(max-width: 768px) {
-      grid-template-columns: 1fr;
-
+      padding-block: 1rem;
     }
 
     @media(max-width: 576px) {
-      grid-template-columns: 1fr auto;
+
     }
 
     @media(max-width: 400) {
-      grid-template-rows: auto auto;
+
     }
 
     .logo {
-      height: 100%;
-      min-height: 60px;
+   
       display: flex;
       align-items: center;
-      // margin-left: 20px;
 
       @media(max-width: 768px) {
-        margin: 0;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -42,39 +32,26 @@
         justify-content: flex-start;
         margin-left: 10px;
       }
-    }
-
-    .title {
-      font-family: 'Dancing Script', cursive;
-      color: transparent;
-      font-size: 1.2rem;
-
-      span {
-        animation: animate 4s ease-in infinite;
-        animation-delay: calc(0.2s * var(--i));
-      }
-
-      code {
-        position: relative;
-        top: 5px;
+      .title {
+        font-family: 'Dancing Script', cursive;
+        color: transparent;
+        font-size: 1.2rem;
+  
+        span {
+          animation: animate 4s ease-in infinite;
+          animation-delay: calc(0.2s * var(--i));
+        }
+  
+        code {
+          position: relative;
+          top: 5px;
+        }
       }
     }
 
     nav {
-      width: 100%;
-      height: 100%;
-      padding: 0 20px;
-      display: flex;
-      align-items: center;
-      background: transparent;
-      // position: relative;
-
-
       .links {
-        height: 100%;
-        min-height: 45px;
         display: flex;
-
         &.show {
           left: 0%;
         }
@@ -101,11 +78,8 @@
 
         li {
           list-style: none;
-          height: 100%;
-          min-height: 45px;
-          display: flex;
           align-items: center;
-          padding: 0 20px;
+          padding: 1rem;
           cursor: pointer;
           transition: 0.3s linear;
 
@@ -194,13 +168,6 @@
 
 @keyframes animate {
 
-  // 0% {
-  //   color: var(--secondry-coloe);
-  //   /* filter: hue-rotate(0deg); */
-  //   text-shadow: 0 0 10px cyan,
-  //     0 0 15px cyan,
-  //     0 0 20px cyan;
-  // }
   30%,
   70% {
     color: var(--secondry-coloe);

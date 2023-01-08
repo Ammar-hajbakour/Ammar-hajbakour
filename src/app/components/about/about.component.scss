@@ -1,55 +1,23 @@
 :host {
 
-  .about-me {
     height: 100%;
     width: 100%;
-
     .text-conatainer {
       width: 100%;
       max-width: 320px;
       height: 100%;
-      color: var(--secondry-coloe);
+      color: cyan;
       font-weight: 600;
-      border-radius: 2px;
+      font-size: 1.2rem;
       margin: auto;
-      text-align: center;
+      text-align: justify;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-evenly;
       align-items: center;
 
     }
-
-
-    .typing {
-      height: 75px;
-      font-size: 1rem;
-      border-radius: 2px;
-      // color: cyan;
-      letter-spacing: 1px;
-      display: flex;
-      align-items: center;
-      text-transform: uppercase;
-
-    }
-
-    .summary {
-      color: cyan;
-    }
-
-    .summary h4 {
-      font-size: .9rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      line-height: 2;
-
-      @media(max-width: 576px) {
-        font-size: 80%;
-      }
-    }
-
-  }
-
 
 }
+
+

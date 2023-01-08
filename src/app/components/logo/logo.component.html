@@ -1,5 +1,4 @@
-<header id="navbar">
-  <div class="logo">
+<div class="logo">
     <h1 class="title">
       <code>
         <span style="--i: 1">&lt;/</span>
@@ -24,19 +23,3 @@
       </code>
     </h1>
   </div>
-  <div class="spacer"></div>
-  <nav>
-    <ul class="links" [class.show]="show" (click)="handleListClick()">
-      <li routerLinkActive="active" routerLink="about"><a>About me</a></li>
-      <li routerLinkActive="active" routerLink="p-skills"><a>Skills</a></li>
-      <li routerLinkActive="active" routerLink="certificates"><a>Certificates</a></li>
-      <li routerLinkActive="active" routerLink="contact"><a>Contact</a></li>
-    </ul>
-    <div class="toggle-menu" [class.open]="show" (click)="toggleMenu()">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </nav>
-
-</header>
