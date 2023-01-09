@@ -52,8 +52,11 @@
     nav {
       .links {
         display: flex;
+        
         &.show {
-          left: 0%;
+          left: 60%;
+          border-left: 1px solid cyan;
+          background: #111;
         }
 
 
@@ -72,10 +75,12 @@
           height: calc(100vh - 60px);
           top: 0;
           left: 100%;
+          width: 100%;
           padding-block: 65px;
           min-height: 100vh;
-          background-color: var(--main-color);
+          
           transition: 0.3s ease;
+          
         }
 
         li {
