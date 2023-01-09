@@ -1,11 +1,11 @@
 :host {
   margin-block: auto;
+  padding-inline-end: .75rem;
   height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-gap: 1rem;
-    padding-inline-end: .5rem;
     @media(max-width: 912px) {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr;
