@@ -1,5 +1,5 @@
 :host {
-
+  padding-inline-end: .5rem;
   .contact {
     height: 100%;
     display: grid;
@@ -7,7 +7,7 @@
     color: cyan;
     .contact-info {
       position: relative;
-      width: 80%;
+      width: 100%;
       max-width: 650px;
       min-height: 300px;
       justify-self: center;

@@ -1,5 +1,6 @@
 :host {
   margin-block-end: 1rem;
+  
   header {
     position: relative;
     width: 100%;
@@ -30,12 +31,11 @@
 
       @media(max-width: 576px) {
         justify-content: flex-start;
-        margin-left: 10px;
       }
       .title {
         font-family: 'Dancing Script', cursive;
         color: transparent;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
   
         span {
           animation: animate 4s ease-in infinite;
@@ -66,12 +66,14 @@
 
         @media(max-width: 576px) {
           flex-flow: column nowrap;
+          justify-content: flex-start;
           position: absolute;
           z-index: 1000;
           height: calc(100vh - 60px);
-          top: 60px;
+          top: 0;
           left: 100%;
-          // left: 0;
+          padding-block: 65px;
+          min-height: 100vh;
           background-color: var(--main-color);
           transition: 0.3s ease;
         }
@@ -82,9 +84,17 @@
           padding: 1rem;
           cursor: pointer;
           transition: 0.3s linear;
+          // @media (max-width: 576px){
+          //   border: 1px solid gray;
+          //   margin-block-end: .5rem;
+          // }
 
-          &.active a {
-            color: cyan;
+          &.active {
+            color: var(--main-color);
+            background: cyan;
+          }
+          &.active a{
+            color: var(--main-color);
           }
 
           &:hover {
@@ -119,10 +129,10 @@
         display: none;
 
         transition: .2s ease-in-out;
-
-        &.open {
-          position: relative;
-        }
+        position: absolute;
+        top: 1rem;
+        right: 0;
+        z-index: 2000;
 
         &.open span {
           position: absolute;

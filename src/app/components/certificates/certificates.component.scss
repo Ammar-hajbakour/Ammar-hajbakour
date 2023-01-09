@@ -1,6 +1,6 @@
 :host {
 
-
+  padding-inline-end: .5rem;
   .certificate {
     h1 {
       text-align: center;
@@ -68,7 +68,7 @@
         }
 
         &:hover .card-title {
-          transform: translateY(10px) scale(1.1);
+          transform: translateY(5px) scale(1.1);
 
         }
       }

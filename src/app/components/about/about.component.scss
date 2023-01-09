@@ -1,11 +1,9 @@
 :host {
-
-    height: 100%;
-    width: 100%;
+  padding-inline-end: .5rem;
     .text-conatainer {
       width: 100%;
-      max-width: 320px;
-      height: 100%;
+      max-width: 350px;
+      min-height: 100%;
       color: cyan;
       font-weight: 600;
       font-size: 1.2rem;
