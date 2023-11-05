@@ -1,20 +1,22 @@
 :host {
-  padding-inline-end: .75rem;
-    .text-conatainer {
-      width: 100%;
-      max-width: 350px;
-      min-height: 100%;
-      color: cyan;
-      font-weight: 600;
-      font-size: 1.2rem;
-      margin: auto;
-      text-align: justify;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
 
+  .text-conatainer {
+    width: 100%;
+    max-width: 500px;
+    color: var(--secondry-coloe);
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-align: justify;
+    margin: auto;
+    p{
+      margin-block-end: 1rem;  
+      transition: .25s linear;
+      &:hover{
+        color: cyan;
+      }
     }
+
+  }
 
 }
 

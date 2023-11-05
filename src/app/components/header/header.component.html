@@ -1,9 +1,35 @@
 <header id="navbar">
   <div class="logo">
+        <div class="contact-info">
+      <ul>
+        <li>
+          <fa-icon [icon]="mobileIcon"></fa-icon>
+          <a href="tel:00905317703913" target="_blank">
+            <!-- <span>Call Me</span> -->
+          </a>
+        </li>
+        <li>
+          <fa-icon [icon]="whatsapp"></fa-icon>
+          <a href="https://wa.me/905317703913" target="_blank">
+            <!-- <span>WhatsApp</span> -->
+          </a>
+        </li>
+        <li>
+          <fa-icon [icon]="messageIcon"></fa-icon>
+          <a href="mailto:ammar.hajbakour@gmail.com/" target="_blank">
+            <!-- <span>Message by email</span> -->
+          </a>
+        </li>
+        <li>
+          <fa-icon [icon]="linkedinIcon"></fa-icon>
+          <a id="profile-link" target="_blank"
+            href="https://www.linkedin.com/in/ammar-hajbakour-28204a21b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B0TtqrG2ERBaQhMJxw9nsrw%3D%3D">
+            <!-- <span>LinkedIn</span> -->
+          </a>
+        </li>  
+      </ul>
+    </div>
     <h1 class="title">
-      <code>
-        <span style="--i: 1">&lt;/</span>
-      </code>
       <span style="--i: 2">A</span>
       <span style="--i: 3">m</span>
       <span style="--i: 4">m</span>
@@ -19,25 +45,16 @@
       <span style="--i: 13">o</span>
       <span style="--i: 14">u</span>
       <span style="--i: 15">r</span>
-      <code>
-        <span style="--i: 16">&gt;</span>
-      </code>
     </h1>
   </div>
   <div class="spacer"></div>
   <nav>
     <ul class="links" [class.show]="show" (click)="handleListClick()">
-      <li routerLinkActive="active" routerLink="about"><a>About me</a></li>
+      <li routerLinkActive="active" routerLink="about"><a>About</a></li>
       <li routerLinkActive="active" routerLink="p-skills"><a>Skills</a></li>
       <li routerLinkActive="active" routerLink="certificates"><a>Certificates</a></li>
-      <li routerLinkActive="active" routerLink="contact"><a>Contact</a></li>
-      <li class="cv"><a target="_blank" href="https://drive.google.com/open?id=1GmT4qL3ieqbZ2AzPzH8YGV22omEZCvr4&authuser=0&usp=drive_link">My CV</a></li>
     </ul>
-    <div class="toggle-menu" [class.open]="show" (click)="toggleMenu()">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+    
   </nav>
 
 </header>

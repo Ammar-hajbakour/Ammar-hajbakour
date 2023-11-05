@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { faLinkedin, faWhatsapp, faGoogle } from '@fortawesome/free-brands-svg-icons';
+import { faPhone,  } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -7,19 +9,15 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
   show: boolean = false
 
+  linkedinIcon = faLinkedin
+  mobileIcon = faPhone
+  messageIcon = faGoogle
+  whatsapp = faWhatsapp
   constructor() { }
 
   ngOnInit(): void {
   }
-  toggleMenu() {
-    this.show = !this.show
-    if (this.show) {
-      document.body.style.overflowY = 'hidden'
-
-    } else {
-      document.body.style.overflowY = 'visible'
-    }
-  }
+  
   handleListClick() {
     this.show = false
     if (this.show) {

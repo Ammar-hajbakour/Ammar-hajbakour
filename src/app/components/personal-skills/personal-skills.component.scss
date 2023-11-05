@@ -1,21 +1,14 @@
 :host {
-  margin-block: auto;
-  padding-inline-end: .75rem;
-  height: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-gap: 1rem;
-    @media(max-width: 912px) {
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr;
 
-    }
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 
-
-  .skills-container,
+  .skills,
   .prod-and-langs {
-    height: 100%;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
     background: rgba(0, 0, 0, 0.3);
     color: var(--secondry-coloe);
     padding: 1rem;
@@ -34,7 +27,7 @@
     width: 100%;
     height: 10px;
     position: relative;
-    margin-block-start: .2rem;
+    margin-block: .75rem;
   }
 
   .progress p span {
@@ -48,60 +41,19 @@
   }
 
 
-  .skills-container .skills {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-rows: repeat(auto-fit, 1fr);
-    gap: .3rem;
-    margin: auto;
-  }
-
-  .prod-and-langs {
-    display: grid;
-    grid-template-rows: 1fr auto;
-  }
-
-  .most-prod {
-    width: 100%;
-    // max-width: 350px;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-
-  }
-
-  .most-prod .item {
-    width: 100%;
-    height: 100%;
-    // text-align: center;
-    transition: .5s ease-in;
-
-  }
-
-
   .most-prod .item p {
     width: 90%;
     font-weight: 600;
     letter-spacing: 1px;
-    margin: auto;
   }
 
   .most-prod .item h4 {
     color: var(--main-color);
     font-size: 1.2rem;
     font-weight: 800;
-    margin-bottom: 10px;
     color: cyan;
     text-shadow: 0 0 10px darkcyan;
+    
+  }
 
-  }
-  .lang{
-    .title{
-      margin-block-end: 1rem;
-    }
-    .progress{
-      margin-block-end: 1rem;
-    }
-  }
 }

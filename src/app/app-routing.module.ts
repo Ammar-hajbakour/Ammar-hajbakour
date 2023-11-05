@@ -1,4 +1,3 @@
-import { ContactComponent } from './components/contact/contact.component';
 import { CertificatesComponent } from './components/certificates/certificates.component';
 import { PersonalSkillsComponent } from './components/personal-skills/personal-skills.component';
 import { AboutComponent } from './components/about/about.component';
@@ -9,9 +8,8 @@ const routes: Routes = [
   { path: '', redirectTo: 'about', pathMatch: 'full' },
   { path: 'about', component: AboutComponent },
   { path: 'p-skills', component: PersonalSkillsComponent },
-  { path: 'certificates', component: CertificatesComponent },
-  { path: 'contact', component: ContactComponent },
-];
+  { path: 'certificates', component: CertificatesComponent } ,
+];  
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

@@ -15,7 +15,7 @@ html {
   
   font-family: 'Zen Kurenaido', sans-serif;
   --main-color: #061019;
-  --secondry-coloe: #f1f1f1;
+  --secondry-coloe: #ddd;
   --bg-color: hsla(200, 19%, 18%, 0.8);
   background: var(--main-color);
   user-select: none;
@@ -26,11 +26,11 @@ html {
   width: 100%;
   max-width: 1200px;
   margin-inline: auto;
-  padding-inline: 1rem;
+  padding: 2rem;
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 
   @media(max-width: 768px) {
     width: 0;
@@ -43,5 +43,5 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--secondry-coloe);
+  background: cyan;
 }

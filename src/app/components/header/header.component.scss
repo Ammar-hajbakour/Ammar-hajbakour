@@ -1,44 +1,29 @@
 :host {
   
   header {
-    padding-block: 1rem;
-    position: relative;
+    margin-block-end: 2rem;
     width: 100%;
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    @media(max-width: 768px) {
-      
-    }
-
-    @media(max-width: 576px) {
-      
-    }
-
-    @media(max-width: 400) {
-
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     .logo {
 
       display: flex;
-      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      align-self: center;
+      gap: .5rem;
 
-      @media(max-width: 768px) {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-      }
-
-      @media(max-width: 576px) {
-        justify-content: flex-start;
-      }
       .title {
-        font-family: 'Dancing Script', cursive;
+        font-family: 'Dancing Script', cursive; 
         color: transparent;
         font-size: 1.5rem;
         span {
-          animation: animate 4s ease-in infinite;
-          animation-delay: calc(0.2s * var(--i));
+          // animation: animate 4s ease-in infinite;
+          // animation-delay: calc(0.2s * var(--i));
+          color: cyan;
         }
   
         code {
@@ -46,83 +31,91 @@
           top: 5px;
         }
       }
+
+      .contact-info {
+        color: cyan;
+        width: 100%;
+        text-align: center;
+        font-size: 1.2rem;
+        border-inline: 1px solid darkcyan;
+        height: fit-content;
+        ul {
+          width: 100%;
+          display: flex;
+          gap: .5rem;
+          margin-inline: .5rem;
+  
+          li {
+            list-style: none;
+            text-align: left;
+            border: 1px solid darkcyan;
+              width: 30px;
+              height: 30px;
+              transition: .25s linear;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              cursor: pointer;
+            fa-icon {
+              color: darkcyan;
+              font-size: 1rem;
+              transition: .25s linear;
+              
+            }
+  
+            a {
+              display: inline-block;
+              text-decoration: none;
+              color: var(--secondry-coloe);
+              transition: .25s linear;
+              font-size: 14px;
+            }
+            &:hover{
+              border-color: cyan;
+            }
+            &:hover a {
+              text-shadow: 0 2px 10px cyan, 0 2px 20px cyan, 0 2px 30px cyan;
+              filter: brightness(200%);
+            }
+  
+            &:hover fa-icon {
+              color: cyan;
+              
+            }
+          }
+        }
+      }
     }
 
     nav {
       .links {
         display: flex;
-        
-        &.show {
-          left: 60%;
-          border-left: 1px solid cyan;
-          background: #111;
-          & li{
-            &.active {
-              background: cyan;
-              & a{
-                color: var(--main-color);
-              }
-            }
-          }
-        
-        }
-
-
-        // @media(max-width: 768px) {
-        //   margin: 0;
-        //   width: 100%;
-        //   flex-flow: row wrap;
-        //   justify-content: center;
-        // }
-
-        @media(max-width: 768px) {
-          flex-flow: column nowrap;
-          justify-content: flex-start;
-          position: absolute;
-          z-index: 1000;
-          height: calc(100vh - 60px);
-          top: 0;
-          left: 100%;
-          width: 100%;
-          padding-block: 65px;
-          min-height: 100vh;
-          
-          transition: 0.3s ease;
-          
-        }
+        gap:1rem;
         
         li {
           list-style: none;
           align-items: center;
-          padding: .5rem 1rem;
-          margin-inline-end: .5rem;
+          // padding: .5rem 1rem;
+          // margin-inline-end: .5rem;
           cursor: pointer;
           transition: 0.3s linear;
-          // color: var(--secondry-coloe);
           &.active{
-            background: cyan;
-            @media(min-width: 769px){
-              background: none;
-            }
             & a{
               color: cyan;
             }
           }
 
-          &:hover {
-            background: cyan;
-          }
-
           &:hover a {
-            color: var(--main-color);
+            color: cyan;
           }
 
           a {
             text-decoration: none;
-            color: snow;
+            color: darkcyan;
             letter-spacing: 1px;
             font-size: 1rem;
             font-weight: 600;
+            transition: .25s linear;
           }
         }
       }
@@ -143,7 +136,7 @@
         position: absolute;
         top: 1rem;
         right: 0;
-        z-index: 2000;
+        z-index: 999;
         & span:nth-of-type(1) {
           width: 50%;
         }
@@ -186,26 +179,5 @@
         }
       }
     }
-  }
-}
-
-@keyframes animate {
-
-  30%,
-  70% {
-    color: var(--secondry-coloe);
-    /* filter: hue-rotate(360deg); */
-    text-shadow: 0 0 10px cyan,
-      0 0 15px cyan,
-      0 0 20px cyan;
-
-  }
-
-
-  0%,
-  100% {
-    color: transparent;
-    filter: hue-rotate(0deg);
-    text-shadow: none;
   }
 }
