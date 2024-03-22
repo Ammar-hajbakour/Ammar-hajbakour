@@ -1,6 +1,6 @@
 <div class="container">
   <app-header></app-header>
-  <main [@fader]="outlet.isActivated ? outlet.activatedRoute : ''">
+  <main [@slider]="outlet.isActivated ? outlet.activatedRoute : ''">
     <router-outlet #outlet="outlet"></router-outlet>
   </main>
 </div>
